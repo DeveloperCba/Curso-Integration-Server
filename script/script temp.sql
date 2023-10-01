@@ -1,6 +1,6 @@
 
 
-use Siscom_Prod_Loja_2
+use Siscom_Dev_Loja01_Update
 go
 
 /*
@@ -232,6 +232,9 @@ LEFT JOIN Empresa		AS t2 ON t2.EmpresaID		= 1--t0.EmpresaId
 
  */
 
+
+ /*
+
   SELECT
      CONVERT(INT,0)								As MesaId
    ,'BALCAO'									AS Mesa
@@ -247,3 +250,110 @@ LEFT JOIN Empresa		AS t2 ON t2.EmpresaID		= 1--t0.EmpresaId
    ,Descricao					AS Mesa
    ,CONVERT(INT,REPLACE(CONVERT(DATE,GETDATE(),120),'-',''))	AS DataHora
  FROM Mesa
+
+
+ */
+/*
+
+ select 
+	 VendaId					AS VendaId
+	,CASE
+		WHEN t0.Mesa IN('BALCAO','BALCÃO','CAIXA') THEN 0
+		ELSE
+		CONVERT(INT,REPLACE(t0.Mesa,'MESA ','')) END
+	 AS MesaId
+	,ISNULL(t0.FuncionarioID,0)	AS FuncionarioId
+	,t1.Nome					AS Funcionario
+	,CONVERT(DATE,Data,120)		AS Data
+	,ValorTotal					AS ValorTotal
+	,Desconto					AS Desconto
+	,ValorFinal					AS ValorFinal
+	,ValorDinheiro				AS ValorDinheiro
+	,ValorCartao				AS ValorCartao
+	,ValorPix					AS ValorPix
+	,CONVERT(BIGINT,REPLACE(REPLACE(REPLACE(ISNULL(t3.CnpjCpf,0),'.',''),'-',''),'/',''))AS EmpresaId
+	,CONVERT(INT,REPLACE(CONVERT(DATE,Data,120),'-',''))	AS DataHora
+ from Venda					t0
+ LEFT JOIN Funcionario		t1 ON t0.FuncionarioId = t1.FuncionarioId
+ LEFT JOIN	Mesa			t2 ON CASE
+									WHEN t0.Mesa IN('BALCAO','BALCÃO','CAIXA') THEN 0
+								   ELSE
+									CONVERT(INT,REPLACE(t0.Mesa,'MESA ','')) END 
+													=  CASE
+													WHEN t2.Descricao IN('BALCAO','BALCÃO','CAIXA') THEN 0
+												ELSE
+													CONVERT(INT,REPLACE(t2.Descricao,'MESA ','')) END 
+LEFT JOIN Empresa		AS t3 ON t3.EmpresaID		= 1--t0.EmpresaId
+
+*/
+											
+ select 
+	 t0.VendaId					AS VendaId
+	,CASE
+		WHEN t0.Mesa IN('BALCAO','BALCÃO','CAIXA') THEN 0
+		ELSE
+		CONVERT(INT,REPLACE(t0.Mesa,'MESA ','')) END
+	 AS MesaId
+	,ISNULL(t0.FuncionarioID,0)	AS FuncionarioId
+
+	--,t1.Nome					AS Funcionario
+	,CONVERT(DATE,Data,120)		AS Data
+	--,t4.Item					AS Item
+	,t4.ProdutoID				AS ProdutoId
+	--,T5.Descricao				AS Produto
+	,CONVERT(BIGINT,REPLACE(REPLACE(REPLACE(ISNULL(t3.CnpjCpf,0),'.',''),'-',''),'/',''))AS EmpresaId
+	,CONVERT(INT,REPLACE(CONVERT(DATE,Data,120),'-',''))	AS DataHora
+	,t4.Quantidade				AS Quantidade
+	,t4.ValorUnitario			AS ValorUnitario
+	,t4.ValorTotal				AS ValorTotal
+	,ISNULL(t4.Item,0)			AS Item
+ from Venda					t0
+ LEFT JOIN VendaItens		t4 ON t0.VendaId	   = t4.VendaID
+ LEFT JOIN Funcionario		t1 ON t0.FuncionarioId = t1.FuncionarioId
+ LEFT JOIN	Mesa			t2 ON CASE
+									WHEN t0.Mesa IN('BALCAO','BALCÃO','CAIXA') THEN 0
+								   ELSE
+									CONVERT(INT,REPLACE(t0.Mesa,'MESA ','')) END 
+													=  CASE
+													WHEN t2.Descricao IN('BALCAO','BALCÃO','CAIXA') THEN 0
+												ELSE
+													CONVERT(INT,REPLACE(t2.Descricao,'MESA ','')) END 
+LEFT JOIN Empresa		AS t3 ON t3.EmpresaID		= 1--t0.EmpresaId
+LEFT JOIN Produto		AS t5 ON t5.ProdutoId       = t4.ProdutoId
+ 
+
+
+ /*
+
+DELETE FROM [dbo].[DimCidade]
+DELETE FROM [dbo].[DimCliente]
+DELETE FROM [dbo].[DimEmpresa]
+DELETE FROM [dbo].[DimFornecedor]
+DELETE FROM [dbo].[DimFuncionario]
+DELETE FROM [dbo].[DimMesa]
+DELETE FROM [dbo].[DimProduto]
+DELETE FROM [dbo].[DimVenda]
+DELETE FROM [dbo].[FatoVenda]
+
+
+SELECT COUNT(0) FROM [dbo].[DimCidade]
+SELECT COUNT(0) FROM [dbo].[DimCliente]
+SELECT COUNT(0) FROM [dbo].[DimEmpresa]
+SELECT COUNT(0) FROM [dbo].[DimFornecedor]
+SELECT COUNT(0) FROM [dbo].[DimFuncionario]
+SELECT COUNT(0) FROM [dbo].[DimMesa]
+SELECT COUNT(0) FROM [dbo].[DimProduto]
+SELECT COUNT(0) FROM [dbo].[DimVenda]
+SELECT COUNT(0) FROM [dbo].[FatoVenda]
+ 
+
+SELECT * FROM [dbo].[DimCidade]
+SELECT * FROM [dbo].[DimCliente]
+SELECT * FROM [dbo].[DimEmpresa]
+SELECT * FROM [dbo].[DimFornecedor]
+SELECT * FROM [dbo].[DimFuncionario]
+SELECT * FROM [dbo].[DimMesa]
+SELECT * FROM [dbo].[DimProduto]
+SELECT COUNT(0) FROM [dbo].[DimVenda]
+SELECT COUNT(0) FROM [dbo].[FatoVenda]
+*/
