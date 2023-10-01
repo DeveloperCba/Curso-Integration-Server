@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="d57d52f5-2374-4530-9757-1bd5ef7982dc" ChangeDateTime="10/01/2023 12:52:09">
+    <Property Name="ElementName" Value="[dbo].[DimCliente].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimCliente]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SkCliente" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1633fd72-4a60-45b9-9f61-99e4034ffb87" ChangeDateTime="10/01/2023 12:52:28">
+    <Property Name="ElementName" Value="[dbo].[DimCliente].[Cliente]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimCliente]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Nome" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e188c94a-b9f1-4c61-bf42-e76b0f753d45" ChangeDateTime="10/01/2023 13:39:59">
+    <Property Name="ElementName" Value="[dbo].[DimEmpresa].[Nome]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimEmpresa]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RazaoSocial" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e4c136f1-33a8-4fdb-8d5c-2eaf9706ae6e" ChangeDateTime="10/01/2023 13:40:55">
+    <Property Name="ElementName" Value="[dbo].[DimEmpresa].[SkCliente]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimEmpresa]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SkEmpresa" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="de28907f-a7d8-44e3-a871-a485f701e127" ChangeDateTime="10/01/2023 14:03:39">
+    <Property Name="ElementName" Value="[dbo].[DimCidade].[SkCliente]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimCidade]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SkCidade" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="805380c4-089a-47bc-8b5d-fa2a2e4793d5" ChangeDateTime="10/01/2023 14:03:43">
+    <Property Name="ElementName" Value="[dbo].[DimCidade].[Nome]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimCidade]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Cidade" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ef3bbafc-cb3b-4a7e-9d36-920efe9daa65" ChangeDateTime="10/01/2023 14:03:48">
+    <Property Name="ElementName" Value="[dbo].[DimCidade].[CpfCnpj]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimCidade]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SkEstado" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5e61db47-f8c0-4682-a6c7-50c5891a4ce5" ChangeDateTime="10/01/2023 14:03:53">
+    <Property Name="ElementName" Value="[dbo].[DimCidade].[Endereco]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimCidade]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Estado" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="59f24e9b-a7d4-4e1a-a90a-6efc1ba499ce" ChangeDateTime="10/01/2023 14:47:07">
+    <Property Name="ElementName" Value="[dbo].[DimMesa].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimMesa]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SkMesa" />
+  </Operation>
+</Operations>

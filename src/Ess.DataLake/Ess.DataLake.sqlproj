@@ -57,4 +57,16 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="DimProduto.sql" />
+    <Build Include="DimCliente.sql" />
+    <Build Include="DimFornecedor.sql" />
+    <Build Include="DimEmpresa.sql" />
+    <Build Include="DimCidade.sql" />
+    <Build Include="DimFuncionario.sql" />
+    <Build Include="DimMesa.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Ess.DataLake.refactorlog" />
+  </ItemGroup>
 </Project>
