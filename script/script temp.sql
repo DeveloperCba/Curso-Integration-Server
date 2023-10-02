@@ -286,7 +286,10 @@ LEFT JOIN Empresa		AS t2 ON t2.EmpresaID		= 1--t0.EmpresaId
 LEFT JOIN Empresa		AS t3 ON t3.EmpresaID		= 1--t0.EmpresaId
 
 */
-											
+
+
+/*
+
  select 
 	 t0.VendaId					AS VendaId
 	,CASE
@@ -321,7 +324,28 @@ LEFT JOIN Empresa		AS t3 ON t3.EmpresaID		= 1--t0.EmpresaId
 LEFT JOIN Empresa		AS t3 ON t3.EmpresaID		= 1--t0.EmpresaId
 LEFT JOIN Produto		AS t5 ON t5.ProdutoId       = t4.ProdutoId
  
+ */
 
+
+ SELECT 
+	 0						AS EstadoId
+	,'INDEFINIDO'			AS Estado
+	,'INDEFINIDO'			AS Uf
+	, CONVERT(INT,REPLACE(CONVERT(DATE,GETDATE(),120),'-',''))	AS DataHora
+	,0.0000					AS Latitude
+	,0.0000					AS Longitude
+FROM 
+	UF			AS t0
+UNION
+SELECT 
+	 t0.IBGE				AS EstadoId
+	,t0.Descricao			AS Estado
+	,t0.UF					AS Uf
+	,CONVERT(INT,REPLACE(CONVERT(DATE,GETDATE(),120),'-',''))	AS DataHora
+	,0.0000					AS Latitude
+	,0.0000					AS Longitude
+FROM 
+	UF					AS t0 
 
  /*
 
@@ -354,6 +378,6 @@ SELECT * FROM [dbo].[DimFornecedor]
 SELECT * FROM [dbo].[DimFuncionario]
 SELECT * FROM [dbo].[DimMesa]
 SELECT * FROM [dbo].[DimProduto]
-SELECT COUNT(0) FROM [dbo].[DimVenda]
-SELECT COUNT(0) FROM [dbo].[FatoVenda]
+SELECT COUNT(0) FROM [dbo].[DimVenda]484620
+SELECT COUNT(0) FROM [dbo].[FatoVenda]988961
 */
