@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="87"
-  DTS:VersionGUID="{1AC30475-5053-4DB2-9CB6-DBC0FA8809EE}">
+  DTS:VersionBuild="88"
+  DTS:VersionGUID="{0A1EA16B-6586-4F25-BEA3-79824344F36A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,11 +25,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=SERVIDOR\SERVIDOR;User ID=sa;Initial Catalog=BI;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{333F4040-40AF-471B-8344-4DADB01D8F0D}Conexao DW;">
+          DTS:ConnectionString="Data Source=127.0.0.1,11533;User ID=sa;Initial Catalog=BI;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{333F4040-40AF-471B-8344-4DADB01D8F0D}Conexao DW;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1NTXSV/o0aRP4g8sfMxLQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADylBb4uqWnwH2FNGeVSzMMK8UUUOvdXjR9JJ4M4UFgHQAAAAAOgAAAAAIAACAAAACo9ILL9EqM20Vahpx0pZMCi98jfHMwA/4fomOX32OLwhAAAAChK7kKhSIwC2xiW7gtNhwTQAAAAKtqr6FKisO2fL/tOq10m4ErOT2cIUNk9cUbNmM+Doaq1rRgIg5FZnreJKL3MqdYj6FoVBUc1IQPfmAwM8WO9so</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEvV/qgx/gUiudcIYI1B8NAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD25BnqQR0Ulvc9v0RrGLlaAAAAAASAAACgAAAAEAAAADYx4zqJM5AiXAf9htzVQhYYAAAAf5QS11DlDqlmsvdmS0rku/b3AAMAV6M6FAAAANOpbpED+Kef4Wf1UW6IlXAw+A+j</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,11 +42,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=SERVIDOR\SERVIDOR;User ID=sa;Initial Catalog=BI_Siscom_Loja02;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{71D031CB-D511-4041-91DA-25F3210B710C}Conexão Banco Ess;">
+          DTS:ConnectionString="Data Source=127.0.0.1,11533;User ID=sa;Initial Catalog=DW_CURSO;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{71D031CB-D511-4041-91DA-25F3210B710C}Conexão Banco Ess;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv1NTXSV/o0aRP4g8sfMxLQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAClDu7zzm5UZE3QuK9UdM3oRxbdc3Dph3xFfvnlW3xZGQAAAAAOgAAAAAIAACAAAADCIUSlAz98jywmS9GeBAq/Ait2BYfCdMSwVlXeD914oxAAAABaMKEM47oW6VkfRa8aNqMFQAAAAMKb1a10mYj5ljO84C25K/T3yCBzx05MgCvj7Aj6/wR/eUkud5Bpww6kLHEXrxmadpnoC/ewypQoiV6DTN8LalE</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEvV/qgx/gUiudcIYI1B8NAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD5SOEHnYEfIkvCCRs9vpipAAAAAASAAACgAAAAEAAAAGpnVOG447yX/hcou19/UMYYAAAALIicXcFhzCID0us7I46YHfW0T78xnPYMFAAAACU2YQMUthBTrE9ERhnov5Ebkwlg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -17381,21 +17381,21 @@ LEFT JOIN Empresa		AS t3 ON t3.EmpresaID		= 1--t0.EmpresaId</property>
           Id="Package\Sequence Container\Carga Tabela DimCidade"
           TopLeft="23.5,119.5" />
         <NodeLayout
-          Size="207,42"
-          Id="Package\Sequence Container\Carga Tabela DimProduto"
-          TopLeft="244.5,326.5" />
-        <NodeLayout
           Size="202,42"
           Id="Package\Sequence Container\Carga Tabela DimCliente"
           TopLeft="255,5.5" />
         <NodeLayout
-          Size="224,42"
-          Id="Package\Sequence Container\Carga Tabela DimFornecedor"
-          TopLeft="246,115.5" />
-        <NodeLayout
           Size="212,42"
           Id="Package\Sequence Container\Carga Tabela DimEmpresa"
           TopLeft="11,242.5" />
+        <NodeLayout
+          Size="202,42"
+          Id="Package\Sequence Container\Carga Tabela DimEstado"
+          TopLeft="19,33" />
+        <NodeLayout
+          Size="224,42"
+          Id="Package\Sequence Container\Carga Tabela DimFornecedor"
+          TopLeft="246,115.5" />
         <NodeLayout
           Size="226,42"
           Id="Package\Sequence Container\Carga Tabela DimFuncionario"
@@ -17404,6 +17404,10 @@ LEFT JOIN Empresa		AS t3 ON t3.EmpresaID		= 1--t0.EmpresaId</property>
           Size="195,42"
           Id="Package\Sequence Container\Carga Tabela DimMesa"
           TopLeft="17.5,322.5" />
+        <NodeLayout
+          Size="207,42"
+          Id="Package\Sequence Container\Carga Tabela DimProduto"
+          TopLeft="244.5,326.5" />
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
           TopLeft="125,161.5">
@@ -17438,10 +17442,6 @@ LEFT JOIN Empresa		AS t3 ON t3.EmpresaID		= 1--t0.EmpresaId</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="202,42"
-          Id="Package\Sequence Container\Carga Tabela DimEstado"
-          TopLeft="19,33" />
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
           TopLeft="122.5,75">
@@ -17587,6 +17587,10 @@ LEFT JOIN Empresa		AS t3 ON t3.EmpresaID		= 1--t0.EmpresaId</property>
           Size="169,42"
           Id="Package\Sequence Container 1\Carga Fato Venda"
           TopLeft="143.714285714286,71.8571428571433" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Sequence Container 1\Carga Venda"
+          TopLeft="47.7142857142858,1.85714285714278" />
         <EdgeLayout
           Id="Package\Sequence Container 1.PrecedenceConstraints[Constraint 7]"
           TopLeft="119.714285714286,43.8571428571433">
@@ -17621,10 +17625,6 @@ LEFT JOIN Empresa		AS t3 ON t3.EmpresaID		= 1--t0.EmpresaId</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="144,42"
-          Id="Package\Sequence Container 1\Carga Venda"
-          TopLeft="47.7142857142858,1.85714285714278" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
@@ -17669,316 +17669,6 @@ LEFT JOIN Empresa		AS t3 ON t3.EmpresaID		= 1--t0.EmpresaId</property>
       </GraphLayout>
     </LayoutInfo>
   </Package>
-  <TaskHost
-    design-time-name="Package\Sequence Container 1\Carga Fato Venda">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="182,42"
-          Id="Package\Sequence Container 1\Carga Fato Venda\Conversão de Dados"
-          TopLeft="225,209.5" />
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Sequence Container 1\Carga Fato Venda\Comando OLE DB"
-          TopLeft="231,413.5" />
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Sequence Container 1\Carga Fato Venda\Ess Fato Venda"
-          TopLeft="237.5,5.49999999999989" />
-        <NodeLayout
-          Size="224,42"
-          Id="Package\Sequence Container 1\Carga Fato Venda\Dimensão de Alteração Lenta"
-          TopLeft="204,311.5" />
-        <NodeLayout
-          Size="165,42"
-          Id="Package\Sequence Container 1\Carga Fato Venda\Insert Destination"
-          TopLeft="5.50000000000006,413.5" />
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Sequence Container 1\Carga Fato Venda\Comando OLE DB 1"
-          TopLeft="461.5,413.5" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Sequence Container 1\Carga Fato Venda\Coluna Derivada"
-          TopLeft="235.5,107.5" />
-        <EdgeLayout
-          Id="Package\Sequence Container 1\Carga Fato Venda.Paths[Saída de Conversão de Dados]"
-          TopLeft="316,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-27.8837109375,21.44873046875,55.767421875,9.6025390625"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container 1\Carga Fato Venda.Paths[Saída de Coluna Derivada]"
-          TopLeft="316,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-27.8837109375,21.44873046875,55.767421875,9.6025390625"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container 1\Carga Fato Venda.Paths[Saída de Atualizações de Membro Inferido]"
-          TopLeft="316,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container 1\Carga Fato Venda.Paths[Saída de Atualizações de Atributo de Alteração]"
-          TopLeft="370,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="181,60"
-              Start="0,0"
-              End="181,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4705882352941" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4705882352941"
-                    Point2="0,20.4705882352941"
-                    Point3="4,20.4705882352941" />
-                  <mssgle:LineSegment
-                    End="177,20.4705882352941" />
-                  <mssgle:CubicBezierSegment
-                    Point1="177,20.4705882352941"
-                    Point2="181,20.4705882352941"
-                    Point3="181,24.4705882352941" />
-                  <mssgle:LineSegment
-                    End="181,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-12.8626953125,25.4705882352941,206.725390625,12.2490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container 1\Carga Fato Venda.Paths[Nova Saída]"
-          TopLeft="262,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-174,60"
-              Start="0,0"
-              End="-174,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4705882352941" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4705882352941"
-                    Point2="0,20.4705882352941"
-                    Point3="-4,20.4705882352941" />
-                  <mssgle:LineSegment
-                    End="-170,20.4705882352941" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-170,20.4705882352941"
-                    Point2="-174,20.4705882352941"
-                    Point3="-174,24.4705882352941" />
-                  <mssgle:LineSegment
-                    End="-174,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-144.62173828125,25.4705882352941,115.2434765625,12.1953125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container 1\Carga Fato Venda.Paths[Saída de Origem OLE DB]"
-          TopLeft="316,47.4999999999999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-27.8837109375,21.44873046875,55.767421875,9.6025390625"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Carga Fato Venda\Ess Fato Venda">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container 1\Carga Fato Venda\Dimensão de Alteração Lenta">
-    <Properties>
-      <Property>
-        <Name>SCDMetadata</Name>
-        <Value
-          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{333F4040-40AF-471B-8344-4DADB01D8F0D}&lt;/ConnectionID&gt;
-  &lt;TableName&gt;[dbo].[FatoVenda]&lt;/TableName&gt;
-  &lt;InputToColumnsCollection&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[MetadadoConvertido]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Metadado&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[QuantidadeConvertido]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Quantidade&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Fato Venda.Saídas[Saída de Origem OLE DB].Colunas[EmpresaId]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;SkEmpresa&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Fato Venda.Saídas[Saída de Origem OLE DB].Colunas[FuncionarioId]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;SkFuncionario&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Fato Venda.Saídas[Saída de Origem OLE DB].Colunas[Item]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;SkItem&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Fato Venda.Saídas[Saída de Origem OLE DB].Colunas[MesaId]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;SkMesa&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[ProdutoIdConvertido]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;SkProduto&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Fato Venda.Saídas[Saída de Origem OLE DB].Colunas[DataHora]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;SkTempo&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[VendaIdConvertido]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;SkVenda&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[ValorTotalConvertido]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;ValorTotal&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[ValorUnitarioConvertido]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;ValorUnitario&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-  &lt;/InputToColumnsCollection&gt;
-  &lt;GeneratedComponentsIdentificationStrings&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
-  &lt;/GeneratedComponentsIdentificationStrings&gt;
-  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
-  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
-  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
-  &lt;CurrentIndicatorColumn /&gt;
-  &lt;InferredIndicatorColumn /&gt;
-  &lt;ValueCurrent /&gt;
-  &lt;ValueExpired /&gt;
-  &lt;StartDateColumn /&gt;
-  &lt;EndDateColumn /&gt;
-  &lt;DateVariable /&gt;
-  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
-&lt;/SCDWizardMetadata&gt;</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container\Carga Tabela DimCidade">
     <LayoutInfo>
@@ -18898,6 +18588,286 @@ LEFT JOIN Empresa		AS t3 ON t3.EmpresaID		= 1--t0.EmpresaId</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\Sequence Container\Carga Tabela DimEstado">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="135,42"
+          Id="Package\Sequence Container\Carga Tabela DimEstado\Ess Estado"
+          TopLeft="248.5,5.49999999999989" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Sequence Container\Carga Tabela DimEstado\Coluna Derivada"
+          TopLeft="235.5,107.5" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Carga Tabela DimEstado.Paths[Saída de Origem OLE DB]"
+          TopLeft="316,47.4999999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Sequence Container\Carga Tabela DimEstado\Conversão de Dados"
+          TopLeft="225,209.5" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Carga Tabela DimEstado.Paths[Saída de Coluna Derivada]"
+          TopLeft="316,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="224,42"
+          Id="Package\Sequence Container\Carga Tabela DimEstado\Dimensão de Alteração Lenta"
+          TopLeft="204,311.5" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Carga Tabela DimEstado.Paths[Saída de Conversão de Dados]"
+          TopLeft="316,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Sequence Container\Carga Tabela DimEstado\Insert Destination"
+          TopLeft="5.50000000000006,413.5" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Carga Tabela DimEstado.Paths[Nova Saída]"
+          TopLeft="262,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-174,60"
+              Start="0,0"
+              End="-174,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4705882352941"
+                    Point2="0,20.4705882352941"
+                    Point3="-4,20.4705882352941" />
+                  <mssgle:LineSegment
+                    End="-170,20.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-170,20.4705882352941"
+                    Point2="-174,20.4705882352941"
+                    Point3="-174,24.4705882352941" />
+                  <mssgle:LineSegment
+                    End="-174,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-111.993359375,25.4705882352941,49.98671875,10.3349609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Sequence Container\Carga Tabela DimEstado\Comando OLE DB"
+          TopLeft="231,413.5" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Carga Tabela DimEstado.Paths[Saída de Atualizações de Membro Inferido]"
+          TopLeft="316,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Sequence Container\Carga Tabela DimEstado\Comando OLE DB 1"
+          TopLeft="461.5,413.5" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Carga Tabela DimEstado.Paths[Saída de Atualizações de Atributo de Alteração]"
+          TopLeft="370,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="181,60"
+              Start="0,0"
+              End="181,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4705882352941"
+                    Point2="0,20.4705882352941"
+                    Point3="4,20.4705882352941" />
+                  <mssgle:LineSegment
+                    End="177,20.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="177,20.4705882352941"
+                    Point2="181,20.4705882352941"
+                    Point3="181,24.4705882352941" />
+                  <mssgle:LineSegment
+                    End="181,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-12.8626953125,25.4705882352941,206.725390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Carga Tabela DimEstado\Ess Estado">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Carga Tabela DimEstado\Dimensão de Alteração Lenta">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionID&gt;{333F4040-40AF-471B-8344-4DADB01D8F0D}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[DimEstado]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Estado.Saídas[Saída de Origem OLE DB].Colunas[Estado]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Estado&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[LatitudeConvertido]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Latitude&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[LongitudeConvertido]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Longitude&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[MetadadoConvertido]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Metadado&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Estado.Saídas[Saída de Origem OLE DB].Colunas[EstadoId]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;SkEstado&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Estado.Saídas[Saída de Origem OLE DB].Colunas[DataHora]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;SkTempo&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;FixedAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Estado.Saídas[Saída de Origem OLE DB].Colunas[Uf]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Uf&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;true&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn /&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent /&gt;
+  &lt;ValueExpired /&gt;
+  &lt;StartDateColumn /&gt;
+  &lt;EndDateColumn /&gt;
+  &lt;DateVariable /&gt;
+  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Sequence Container\Carga Tabela DimFornecedor">
     <LayoutInfo>
       <GraphLayout
@@ -19213,322 +19183,6 @@ LEFT JOIN Empresa		AS t3 ON t3.EmpresaID		= 1--t0.EmpresaId</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\Carga Tabela DimFornecedor\Ess Fornecedor">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Sequence Container\Carga Tabela DimProduto">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="224,42"
-          Id="Package\Sequence Container\Carga Tabela DimProduto\Dimensão de Alteração Lenta"
-          TopLeft="204,311.5" />
-        <NodeLayout
-          Size="165,42"
-          Id="Package\Sequence Container\Carga Tabela DimProduto\Insert Destination"
-          TopLeft="5.50000000000006,413.5" />
-        <NodeLayout
-          Size="182,42"
-          Id="Package\Sequence Container\Carga Tabela DimProduto\Conversão de Dados"
-          TopLeft="225,209.5" />
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Sequence Container\Carga Tabela DimProduto\Comando OLE DB"
-          TopLeft="231,413.5" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Sequence Container\Carga Tabela DimProduto\Ess Produto"
-          TopLeft="235.5,5.49999999999989" />
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Sequence Container\Carga Tabela DimProduto\Comando OLE DB 1"
-          TopLeft="461.5,413.5" />
-        <NodeLayout
-          Size="168,42"
-          Id="Package\Sequence Container\Carga Tabela DimProduto\Colunas Metadata"
-          TopLeft="232,107.5" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Carga Tabela DimProduto.Paths[Saída de Origem OLE DB]"
-          TopLeft="316,47.4999999999999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Carga Tabela DimProduto.Paths[Saída de Conversão de Dados]"
-          TopLeft="316,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Carga Tabela DimProduto.Paths[Saída de Coluna Derivada]"
-          TopLeft="316,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Carga Tabela DimProduto.Paths[Saída de Atualizações de Membro Inferido]"
-          TopLeft="316,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Carga Tabela DimProduto.Paths[Saída de Atualizações de Atributo de Alteração]"
-          TopLeft="370,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="181,60"
-              Start="0,0"
-              End="181,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4705882352941" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4705882352941"
-                    Point2="0,20.4705882352941"
-                    Point3="4,20.4705882352941" />
-                  <mssgle:LineSegment
-                    End="177,20.4705882352941" />
-                  <mssgle:CubicBezierSegment
-                    Point1="177,20.4705882352941"
-                    Point2="181,20.4705882352941"
-                    Point3="181,24.4705882352941" />
-                  <mssgle:LineSegment
-                    End="181,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-12.8626953125,25.4705882352941,206.725390625,12.2490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Carga Tabela DimProduto.Paths[Nova Saída]"
-          TopLeft="262,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-174,60"
-              Start="0,0"
-              End="-174,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4705882352941" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4705882352941"
-                    Point2="0,20.4705882352941"
-                    Point3="-4,20.4705882352941" />
-                  <mssgle:LineSegment
-                    End="-170,20.4705882352941" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-170,20.4705882352941"
-                    Point2="-174,20.4705882352941"
-                    Point3="-174,24.4705882352941" />
-                  <mssgle:LineSegment
-                    End="-174,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-111.993359375,25.4705882352941,49.98671875,10.3349609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Carga Tabela DimProduto\Dimensão de Alteração Lenta">
-    <Properties>
-      <Property>
-        <Name>SCDMetadata</Name>
-        <Value
-          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{333F4040-40AF-471B-8344-4DADB01D8F0D}&lt;/ConnectionID&gt;
-  &lt;TableName&gt;[dbo].[DimProduto]&lt;/TableName&gt;
-  &lt;InputToColumnsCollection&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[Categoria]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Categoria&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[Fornecedor]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Fornecedor&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[Lucro]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Lucro&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[MetadadoConvertido]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Metadado&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[Produto]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Produto&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[CategoriaIdConvertido]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;SkCategoria&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[FornecedorIdConvertido]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;SkFornecedor&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[ProdutoIdConvertido]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;SkProduto&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[DataHora]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;SkTempo&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[UnidadeIdConvertido]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;SkUnidade&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[Unidade]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Unidade&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[ValorCompra]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;ValorCompra&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[ValorVenda]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;ValorVenda&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-  &lt;/InputToColumnsCollection&gt;
-  &lt;GeneratedComponentsIdentificationStrings&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
-  &lt;/GeneratedComponentsIdentificationStrings&gt;
-  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
-  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
-  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
-  &lt;CurrentIndicatorColumn /&gt;
-  &lt;InferredIndicatorColumn /&gt;
-  &lt;ValueCurrent /&gt;
-  &lt;ValueExpired /&gt;
-  &lt;StartDateColumn /&gt;
-  &lt;EndDateColumn /&gt;
-  &lt;DateVariable /&gt;
-  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
-&lt;/SCDWizardMetadata&gt;</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Carga Tabela DimProduto\Ess Produto">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -20108,6 +19762,632 @@ LEFT JOIN Empresa		AS t3 ON t3.EmpresaID		= 1--t0.EmpresaId</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\Sequence Container\Carga Tabela DimProduto">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="224,42"
+          Id="Package\Sequence Container\Carga Tabela DimProduto\Dimensão de Alteração Lenta"
+          TopLeft="204,311.5" />
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Sequence Container\Carga Tabela DimProduto\Insert Destination"
+          TopLeft="5.50000000000006,413.5" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Sequence Container\Carga Tabela DimProduto\Conversão de Dados"
+          TopLeft="225,209.5" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Sequence Container\Carga Tabela DimProduto\Comando OLE DB"
+          TopLeft="231,413.5" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Sequence Container\Carga Tabela DimProduto\Ess Produto"
+          TopLeft="235.5,5.49999999999989" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Sequence Container\Carga Tabela DimProduto\Comando OLE DB 1"
+          TopLeft="461.5,413.5" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Sequence Container\Carga Tabela DimProduto\Colunas Metadata"
+          TopLeft="232,107.5" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Carga Tabela DimProduto.Paths[Saída de Origem OLE DB]"
+          TopLeft="316,47.4999999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Carga Tabela DimProduto.Paths[Saída de Conversão de Dados]"
+          TopLeft="316,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Carga Tabela DimProduto.Paths[Saída de Coluna Derivada]"
+          TopLeft="316,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Carga Tabela DimProduto.Paths[Saída de Atualizações de Membro Inferido]"
+          TopLeft="316,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Carga Tabela DimProduto.Paths[Saída de Atualizações de Atributo de Alteração]"
+          TopLeft="370,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="181,60"
+              Start="0,0"
+              End="181,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4705882352941"
+                    Point2="0,20.4705882352941"
+                    Point3="4,20.4705882352941" />
+                  <mssgle:LineSegment
+                    End="177,20.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="177,20.4705882352941"
+                    Point2="181,20.4705882352941"
+                    Point3="181,24.4705882352941" />
+                  <mssgle:LineSegment
+                    End="181,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-12.8626953125,25.4705882352941,206.725390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Carga Tabela DimProduto.Paths[Nova Saída]"
+          TopLeft="262,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-174,60"
+              Start="0,0"
+              End="-174,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4705882352941"
+                    Point2="0,20.4705882352941"
+                    Point3="-4,20.4705882352941" />
+                  <mssgle:LineSegment
+                    End="-170,20.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-170,20.4705882352941"
+                    Point2="-174,20.4705882352941"
+                    Point3="-174,24.4705882352941" />
+                  <mssgle:LineSegment
+                    End="-174,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-111.993359375,25.4705882352941,49.98671875,10.3349609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Carga Tabela DimProduto\Dimensão de Alteração Lenta">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionID&gt;{333F4040-40AF-471B-8344-4DADB01D8F0D}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[DimProduto]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[Categoria]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Categoria&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[Fornecedor]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Fornecedor&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[Lucro]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Lucro&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[MetadadoConvertido]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Metadado&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[Produto]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Produto&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[CategoriaIdConvertido]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;SkCategoria&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[FornecedorIdConvertido]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;SkFornecedor&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[ProdutoIdConvertido]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;SkProduto&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[DataHora]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;SkTempo&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[UnidadeIdConvertido]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;SkUnidade&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[Unidade]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Unidade&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[ValorCompra]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;ValorCompra&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Produto.Saídas[Saída de Origem OLE DB].Colunas[ValorVenda]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;ValorVenda&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn /&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent /&gt;
+  &lt;ValueExpired /&gt;
+  &lt;StartDateColumn /&gt;
+  &lt;EndDateColumn /&gt;
+  &lt;DateVariable /&gt;
+  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Carga Tabela DimProduto\Ess Produto">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container 1\Carga Fato Venda">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Sequence Container 1\Carga Fato Venda\Conversão de Dados"
+          TopLeft="225,209.5" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Sequence Container 1\Carga Fato Venda\Comando OLE DB"
+          TopLeft="231,413.5" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Sequence Container 1\Carga Fato Venda\Ess Fato Venda"
+          TopLeft="237.5,5.49999999999989" />
+        <NodeLayout
+          Size="224,42"
+          Id="Package\Sequence Container 1\Carga Fato Venda\Dimensão de Alteração Lenta"
+          TopLeft="204,311.5" />
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Sequence Container 1\Carga Fato Venda\Insert Destination"
+          TopLeft="5.50000000000006,413.5" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Sequence Container 1\Carga Fato Venda\Comando OLE DB 1"
+          TopLeft="461.5,413.5" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Sequence Container 1\Carga Fato Venda\Coluna Derivada"
+          TopLeft="235.5,107.5" />
+        <EdgeLayout
+          Id="Package\Sequence Container 1\Carga Fato Venda.Paths[Saída de Conversão de Dados]"
+          TopLeft="316,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-27.8837109375,21.44873046875,55.767421875,9.6025390625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container 1\Carga Fato Venda.Paths[Saída de Coluna Derivada]"
+          TopLeft="316,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-27.8837109375,21.44873046875,55.767421875,9.6025390625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container 1\Carga Fato Venda.Paths[Saída de Atualizações de Membro Inferido]"
+          TopLeft="316,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container 1\Carga Fato Venda.Paths[Saída de Atualizações de Atributo de Alteração]"
+          TopLeft="370,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="181,60"
+              Start="0,0"
+              End="181,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4705882352941"
+                    Point2="0,20.4705882352941"
+                    Point3="4,20.4705882352941" />
+                  <mssgle:LineSegment
+                    End="177,20.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="177,20.4705882352941"
+                    Point2="181,20.4705882352941"
+                    Point3="181,24.4705882352941" />
+                  <mssgle:LineSegment
+                    End="181,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-12.8626953125,25.4705882352941,206.725390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container 1\Carga Fato Venda.Paths[Nova Saída]"
+          TopLeft="262,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-174,60"
+              Start="0,0"
+              End="-174,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4705882352941"
+                    Point2="0,20.4705882352941"
+                    Point3="-4,20.4705882352941" />
+                  <mssgle:LineSegment
+                    End="-170,20.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-170,20.4705882352941"
+                    Point2="-174,20.4705882352941"
+                    Point3="-174,24.4705882352941" />
+                  <mssgle:LineSegment
+                    End="-174,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-144.62173828125,25.4705882352941,115.2434765625,12.1953125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container 1\Carga Fato Venda.Paths[Saída de Origem OLE DB]"
+          TopLeft="316,47.4999999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-27.8837109375,21.44873046875,55.767421875,9.6025390625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Carga Fato Venda\Ess Fato Venda">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container 1\Carga Fato Venda\Dimensão de Alteração Lenta">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionID&gt;{333F4040-40AF-471B-8344-4DADB01D8F0D}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[FatoVenda]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[MetadadoConvertido]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Metadado&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[QuantidadeConvertido]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Quantidade&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Fato Venda.Saídas[Saída de Origem OLE DB].Colunas[EmpresaId]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;SkEmpresa&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Fato Venda.Saídas[Saída de Origem OLE DB].Colunas[FuncionarioId]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;SkFuncionario&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Fato Venda.Saídas[Saída de Origem OLE DB].Colunas[Item]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;SkItem&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Fato Venda.Saídas[Saída de Origem OLE DB].Colunas[MesaId]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;SkMesa&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[ProdutoIdConvertido]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;SkProduto&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Ess Fato Venda.Saídas[Saída de Origem OLE DB].Colunas[DataHora]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;SkTempo&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[VendaIdConvertido]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;SkVenda&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[ValorTotalConvertido]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;ValorTotal&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[ValorUnitarioConvertido]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;ValorUnitario&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn /&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent /&gt;
+  &lt;ValueExpired /&gt;
+  &lt;StartDateColumn /&gt;
+  &lt;EndDateColumn /&gt;
+  &lt;DateVariable /&gt;
+  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Sequence Container 1\Carga Venda">
     <LayoutInfo>
       <GraphLayout
@@ -20415,286 +20695,6 @@ LEFT JOIN Empresa		AS t3 ON t3.EmpresaID		= 1--t0.EmpresaId</property>
     &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
   &lt;/GeneratedComponentsIdentificationStrings&gt;
   &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
-  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
-  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
-  &lt;CurrentIndicatorColumn /&gt;
-  &lt;InferredIndicatorColumn /&gt;
-  &lt;ValueCurrent /&gt;
-  &lt;ValueExpired /&gt;
-  &lt;StartDateColumn /&gt;
-  &lt;EndDateColumn /&gt;
-  &lt;DateVariable /&gt;
-  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
-&lt;/SCDWizardMetadata&gt;</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Sequence Container\Carga Tabela DimEstado">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="135,42"
-          Id="Package\Sequence Container\Carga Tabela DimEstado\Ess Estado"
-          TopLeft="248.5,5.49999999999989" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Sequence Container\Carga Tabela DimEstado\Coluna Derivada"
-          TopLeft="235.5,107.5" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Carga Tabela DimEstado.Paths[Saída de Origem OLE DB]"
-          TopLeft="316,47.4999999999999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="182,42"
-          Id="Package\Sequence Container\Carga Tabela DimEstado\Conversão de Dados"
-          TopLeft="225,209.5" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Carga Tabela DimEstado.Paths[Saída de Coluna Derivada]"
-          TopLeft="316,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="224,42"
-          Id="Package\Sequence Container\Carga Tabela DimEstado\Dimensão de Alteração Lenta"
-          TopLeft="204,311.5" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Carga Tabela DimEstado.Paths[Saída de Conversão de Dados]"
-          TopLeft="316,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="165,42"
-          Id="Package\Sequence Container\Carga Tabela DimEstado\Insert Destination"
-          TopLeft="5.50000000000006,413.5" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Carga Tabela DimEstado.Paths[Nova Saída]"
-          TopLeft="262,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-174,60"
-              Start="0,0"
-              End="-174,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4705882352941" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4705882352941"
-                    Point2="0,20.4705882352941"
-                    Point3="-4,20.4705882352941" />
-                  <mssgle:LineSegment
-                    End="-170,20.4705882352941" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-170,20.4705882352941"
-                    Point2="-174,20.4705882352941"
-                    Point3="-174,24.4705882352941" />
-                  <mssgle:LineSegment
-                    End="-174,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-111.993359375,25.4705882352941,49.98671875,10.3349609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Sequence Container\Carga Tabela DimEstado\Comando OLE DB"
-          TopLeft="231,413.5" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Carga Tabela DimEstado.Paths[Saída de Atualizações de Membro Inferido]"
-          TopLeft="316,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Sequence Container\Carga Tabela DimEstado\Comando OLE DB 1"
-          TopLeft="461.5,413.5" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Carga Tabela DimEstado.Paths[Saída de Atualizações de Atributo de Alteração]"
-          TopLeft="370,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="181,60"
-              Start="0,0"
-              End="181,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4705882352941" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4705882352941"
-                    Point2="0,20.4705882352941"
-                    Point3="4,20.4705882352941" />
-                  <mssgle:LineSegment
-                    End="177,20.4705882352941" />
-                  <mssgle:CubicBezierSegment
-                    Point1="177,20.4705882352941"
-                    Point2="181,20.4705882352941"
-                    Point3="181,24.4705882352941" />
-                  <mssgle:LineSegment
-                    End="181,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-12.8626953125,25.4705882352941,206.725390625,12.2490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Carga Tabela DimEstado\Ess Estado">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Carga Tabela DimEstado\Dimensão de Alteração Lenta">
-    <Properties>
-      <Property>
-        <Name>SCDMetadata</Name>
-        <Value
-          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{333F4040-40AF-471B-8344-4DADB01D8F0D}&lt;/ConnectionID&gt;
-  &lt;TableName&gt;[dbo].[DimEstado]&lt;/TableName&gt;
-  &lt;InputToColumnsCollection&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Estado.Saídas[Saída de Origem OLE DB].Colunas[Estado]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Estado&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[LatitudeConvertido]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Latitude&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[LongitudeConvertido]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Longitude&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão de Dados.Saídas[Saída de Conversão de Dados].Colunas[MetadadoConvertido]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Metadado&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Estado.Saídas[Saída de Origem OLE DB].Colunas[EstadoId]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;SkEstado&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Estado.Saídas[Saída de Origem OLE DB].Colunas[DataHora]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;SkTempo&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;FixedAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Ess Estado.Saídas[Saída de Origem OLE DB].Colunas[Uf]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Uf&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-  &lt;/InputToColumnsCollection&gt;
-  &lt;GeneratedComponentsIdentificationStrings&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
-  &lt;/GeneratedComponentsIdentificationStrings&gt;
-  &lt;FailFixedAttribute&gt;true&lt;/FailFixedAttribute&gt;
   &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
   &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
   &lt;CurrentIndicatorColumn /&gt;

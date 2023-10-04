@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: docker-sqlserver-integration
+    environment:
+      SA_PASSWORD: MeuDb@123
+      
+      ACCEPT_EULA: Y
+    ports:
+      - "11533:1433"
+    volumes:
+      - ./backup:/var/opt/mssql/backup  
+      # - ./log:/var/opt/mssql/log  
+      # - ./data:/var/opt/mssql/data  
+      #  - ${ARTIFACTS_DIRECTORY}/backups:/var/opt/mssql/backups
+      # - ${ARTIFACTS_DIRECTORY}/sqlsystem:/var/opt/mssql/data
+      # - ${ARTIFACTS_DIRECTORY}/sqluser:/var/opt/mssql/sqlserver
+      # - ${ARTIFACTS_DIRECTORY}/sqlbackups:/var/opt/mssql/backups
+
+      # alternative syntax to just have it in local path
+      # - ./sqlsystem:/var/opt/mssql/data
+      # - ./sqluser:/var/opt/mssql/sqlserver
+      # - ./sqlbackups:/var/opt/mssql/backups
+
+  integration-server:
+    image: mcr.microsoft.com/mssql/ssis
+    container_name: docker-integration-server
+    environment:
+      SA_PASSWORD: MeuDb@123
+      ACCEPT_EULA: Y
+      ACCEPT_SSP: Y
+      MSSQL_SA_PASSWORD: MeuDb@123
+    volumes:
+      - ./ssis-packages:/var/opt/ssis/Packages
+volumes:
+  ssis-packages:
+
+ 
