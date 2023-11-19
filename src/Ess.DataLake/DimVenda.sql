@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[DimVenda]
 (
-    [SkTempo] INT NULL, 
+    [SkTempo] INT NOT NULL, 
 	[SkVenda] INT NOT NULL , 
     [SkEmpresa] BIGINT NOT NULL, 
     [SkMesa] INT NULL, 

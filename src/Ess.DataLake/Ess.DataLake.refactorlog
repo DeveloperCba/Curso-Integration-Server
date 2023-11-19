@@ -119,4 +119,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Item" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="c36240d2-8507-4504-af3f-327b91c23cac" ChangeDateTime="11/19/2023 13:23:33">
+    <Property Name="ElementName" Value="[dbo].[FatoVenda].[TotalVenda]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FatoVenda]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ValorVenda" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5f377833-4a9c-4418-88ba-7d1fc1b0d0c6" ChangeDateTime="11/19/2023 13:38:27">
+    <Property Name="ElementName" Value="[dbo].[DimEmpresa].[Sk]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimEmpresa]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SkTempo" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4f568948-1885-46c3-81de-516ac1917f5f" ChangeDateTime="11/19/2023 13:40:39">
+    <Property Name="ElementName" Value="[dbo].[DimFornecedor].[Sk]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimFornecedor]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SkTempo" />
+  </Operation>
 </Operations>

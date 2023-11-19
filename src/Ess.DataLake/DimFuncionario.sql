@@ -1,5 +1,6 @@
 ﻿CREATE TABLE [dbo].[DimFuncionario]
 (
+    [SkTempo] INT NOT NULL,
 	[SkFuncionario] INT NOT NULL PRIMARY KEY, 
     [Nome] VARCHAR(250) NULL, 
     [Endereco] VARCHAR(350) NULL, 
@@ -10,6 +11,5 @@
     [SkDepartamento] INT NULL, 
     [Departamento] VARCHAR(250) NULL, 
     [SkEmpresa] BIGINT NULL, 
-    [SkTempo] INT NULL, 
     [Metadado] VARCHAR(250) NULL
 )

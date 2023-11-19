@@ -68,6 +68,7 @@
     <Build Include="DimVenda.sql" />
     <Build Include="FatoVenda.sql" />
     <Build Include="DimEstado.sql" />
+    <Build Include="DimTempo.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Ess.DataLake.refactorlog" />

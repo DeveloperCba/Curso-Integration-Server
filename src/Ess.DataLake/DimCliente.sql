@@ -1,5 +1,6 @@
 ﻿CREATE TABLE [dbo].[DimCliente]
 (
+    [SkTempo] INT NOT NULL,
 	[SkCliente] INT NOT NULL PRIMARY KEY, 
     [Nome] VARCHAR(250) NULL, 
     [CpfCnpj] VARCHAR(20) NULL, 
@@ -12,6 +13,6 @@
     [Cidade] VARCHAR(250) NULL, 
     [SkEstado] INT NULL, 
     [Estado] VARCHAR(20) NULL, 
-    [SkTempo] INT NULL, 
-    [Metadado] VARCHAR(250) NULL
+    [Metadado] VARCHAR(250) NULL 
+
 )
