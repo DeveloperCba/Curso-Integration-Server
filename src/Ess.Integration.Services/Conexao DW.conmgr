@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Conexao DW"
+  DTS:DTSID="{3D81EBA7-AD08-48FF-9218-A4C84B45CF02}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=.\SQL2022;Initial Catalog=BI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Ess.Integration.Services-{3D81EBA7-AD08-48FF-9218-A4C84B45CF02}.\SQL2022.SiscomConferenciaNotaLoja01.sa;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

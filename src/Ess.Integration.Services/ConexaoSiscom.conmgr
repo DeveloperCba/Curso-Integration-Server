@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="ConexaoSiscom"
+  DTS:DTSID="{A3D5A954-EDC9-4529-8B9B-4545C939E919}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="InitialCatalog">@[$Project::SiscomDatabase]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="Name">@[$Project::SiscomConexao]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="Password">@[$Project::SiscomPassword]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">@[$Project::SiscomDatasource]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="UserName">@[$Project::SiscomUser]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=.\SQL2022;User ID=sa;Initial Catalog=SiscomConferenciaNotaLoja01;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Ess.Integration.Services-{A3D5A954-EDC9-4529-8B9B-4545C939E919}.\SQL2022.SiscomConferenciaNotaLoja01;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPcPUyIQcrUy9Nh0wCWlnEgAAAAACAAAAAAAQZgAAAAEAACAAAAD7YdW9aKPYeBeaeBMtVu/MhU+C/Fher3jKu6qi1ymlagAAAAAOgAAAAAIAACAAAADfxAgEYKGNaOxGFYFrGXzoiQdvSdZao2PGxqImvLeThYAAAABdZpOvb1Gaas6kf3nXFo3Tqb7rem2dMuaVNYdLu/rutxbPaspr82oE3HJ/dCWIGHNE3fT0Y1f7CosT5qyGXQuSwcp5G2PK/liHc8MnP3AMxX2MX7l+4pV3A6RQ6OmS3upkewnzFYteqY68pxIlmdKeW1yW1KkqXuCaUFt66xn8rEAAAABPMzP07fEnkD9iKw0x2DbLWfinBs0cNnwyn7vsHbY7m5kkrrAZAkvgRgbS/K3yu7LoOEKXJNexj+mt/fmrWlbj</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

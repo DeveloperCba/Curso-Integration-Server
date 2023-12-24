@@ -4,7 +4,5 @@
     [Estado] VARCHAR(50) NULL, 
     [Uf] VARCHAR(20) NULL, 
     [Latitude] FLOAT NULL, 
-    [Longitude] FLOAT NULL, 
-    [SkTempo] int null,
-    [Metadado] VARCHAR(150) NULL
+    [Longitude] FLOAT NULL 
 )

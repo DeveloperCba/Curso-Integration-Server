@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Conexao SqlServer"
+  DTS:DTSID="{1839BF2C-04DC-4E82-962F-0CE8A32D7592}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=.\SQL2022;User ID=sa;Initial Catalog=SiscomConferenciaNotaLoja01;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Ess.Integration.Services-{1839BF2C-04DC-4E82-962F-0CE8A32D7592}.\SQL2022.SiscomConferenciaNotaLoja01.sa1;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPcPUyIQcrUy9Nh0wCWlnEgAAAAACAAAAAAAQZgAAAAEAACAAAAA15ZAykNn0LyLbvknGIYo5Xzs4/X2U/kZAV6+J2sbGSAAAAAAOgAAAAAIAACAAAAASVFIqw49R7f/OkLvooCyIiuCMcJUiIRcvHK4R9ZoJ1YAAAAADkz+9Se2JF3ryAszqgKqibf8+egfX2EdT1eYNNvjSpLxXxCa1921/SZtMrXke67w4cSvPOUxqYfH2V0Jv46ar/EIwd0gR7QkVkYiLo7dW53EpVcxiO8XYKpCnKibYEgl1tDZo5h4A/dttMXJFon8Vevxb4bNvSJWFIl/lfBi25kAAAACa1Dtrblhk299imRxkm2dJ0zJnHy3EUrZgGDcjlyMxGeGH9bkAEtlyKPK45wTLVhY52NyuS9a10E+WLKdqPgSN</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

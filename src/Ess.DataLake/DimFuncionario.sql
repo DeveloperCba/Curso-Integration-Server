@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[DimFuncionario]
 (
-    [SkTempo] INT NOT NULL,
-	[SkFuncionario] INT NOT NULL PRIMARY KEY, 
+	[SkFuncionario] INT NOT NULL , 
+    [SkEmpresa] BIGINT NOT NULL ,
     [Nome] VARCHAR(250) NULL, 
     [Endereco] VARCHAR(350) NULL, 
     [Bairro] VARCHAR(150) NULL, 
@@ -10,6 +10,6 @@
     [Telefone] VARCHAR(20) NULL, 
     [SkDepartamento] INT NULL, 
     [Departamento] VARCHAR(250) NULL, 
-    [SkEmpresa] BIGINT NULL, 
-    [Metadado] VARCHAR(250) NULL
+    CONSTRAINT [PK_DimFuncionario] PRIMARY KEY ([SkFuncionario], [SkEmpresa])  
+ 
 )

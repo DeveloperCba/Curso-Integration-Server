@@ -2,13 +2,12 @@
 (
 	[SkVenda] INT NOT NULL , 
     [SkEmpresa] BIGINT NOT NULL, 
-    [SkMesa] INT NULL, 
-    [SkFuncionario] INT NULL, 
-    [SkTempo] INT NULL, 
-    [SkProduto] INT NULL, 
+    [SkMesa] INT NOT NULL, 
+    [SkFuncionario] INT NOT NULL, 
+    [SkTempo] INT NOT NULL, 
+    [SkProduto] INT NOT NULL, 
     [ValorVenda] DECIMAL(18, 2) NULL, 
-    [Quantidade] NCHAR(10) NULL, 
+    [Quantidade] DECIMAL(18, 2) NULL, 
     [TotalItem] INT NULL, 
-    [Metadado] VARCHAR(150) NULL, 
-    PRIMARY KEY ([SkEmpresa], [SkVenda])
+    PRIMARY KEY ([SkVenda], [SkProduto], [SkEmpresa], [SkMesa], [SkFuncionario], [SkTempo])
 )
